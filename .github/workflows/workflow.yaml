@@ -1,0 +1,12 @@
+name: Custom Action demo
+
+on: [push]
+
+jobs:
+  EchoParameter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: kdkwakaba/echoparam@main
+        with:
+          parameter: "hogehoge"
